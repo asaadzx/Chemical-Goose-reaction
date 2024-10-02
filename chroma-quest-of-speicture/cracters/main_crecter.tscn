@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctawnsyu4ltnx"]
+
+[ext_resource type="Script" path="res://spricts/main_crecter.gd" id="1_yvul2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p7v0o"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jumping",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"pass",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"running ",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ieb0b"]
+
+[node name="main crecter" type="Node"]
+
+[node name="MAIN CRECTER" type="CharacterBody2D" parent="."]
+position = Vector2(532, 256)
+script = ExtResource("1_yvul2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MAIN CRECTER"]
+sprite_frames = SubResource("SpriteFrames_p7v0o")
+animation = &"move"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MAIN CRECTER"]
+shape = SubResource("CapsuleShape2D_ieb0b")

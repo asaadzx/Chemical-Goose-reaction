@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=3 uid="uid://djxicnbg2knew"]
+
+[ext_resource type="Script" path="res://spricts/level_4.gd" id="1_4dm7u"]
+
+[sub_resource type="TileSet" id="TileSet_7w10n"]
+
+[node name="main menu" type="Node"]
+
+[node name="over world" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_7w10n")
+format = 2
+
+[node name="move on" type="TileMap" parent="."]
+format = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(579, 330)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="mouse use" type="Node" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="mouse use"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="level 4" type="Button" parent="mouse use"]
+anchors_preset = -1
+anchor_left = 0.701
+anchor_top = 0.552
+anchor_right = 0.701
+anchor_bottom = 0.552
+offset_left = -6.55206
+offset_top = -37.696
+offset_right = 127.448
+offset_bottom = 21.304
+text = "level 4 😎"
+script = ExtResource("1_4dm7u")
+
+[node name="level 3" type="Button" parent="mouse use"]
+anchors_preset = -1
+anchor_left = 0.539
+anchor_top = 0.552
+anchor_right = 0.539
+anchor_bottom = 0.552
+offset_left = -6.92804
+offset_top = -38.696
+offset_right = 128.072
+offset_bottom = 23.304
+text = "level 3 😎"
+
+[node name="level 2" type="Button" parent="mouse use"]
+anchors_preset = -1
+anchor_left = 0.364
+anchor_top = 0.554
+anchor_right = 0.364
+anchor_bottom = 0.554
+offset_left = -9.32803
+offset_top = -38.992
+offset_right = 129.672
+offset_bottom = 23.008
+size_flags_vertical = 8
+text = "level 2 😎"
+
+[node name="level 1" type="Button" parent="mouse use"]
+anchors_preset = -1
+anchor_left = 0.214
+anchor_top = 0.554
+anchor_right = 0.214
+anchor_bottom = 0.554
+offset_left = -8.52802
+offset_top = -38.992
+offset_right = 129.472
+offset_bottom = 23.008
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "level 1 😎"
+
+[connection signal="pressed" from="mouse use/level 4" to="mouse use/level 4" method="_on_pressed"]
+[connection signal="pressed" from="mouse use/level 3" to="mouse use/level 4" method="_on_level_3_pressed"]
+[connection signal="pressed" from="mouse use/level 2" to="mouse use/level 4" method="_on_level_2_pressed"]
+[connection signal="pressed" from="mouse use/level 1" to="mouse use/level 4" method="_on_level_1_pressed"]
