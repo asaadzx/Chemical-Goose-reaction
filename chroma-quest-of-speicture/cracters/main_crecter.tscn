@@ -155,3 +155,5 @@ autoplay = "pass"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MAIN CRECTER"]
 shape = SubResource("CapsuleShape2D_ieb0b")
+
+[node name="Camera2D" type="Camera2D" parent="MAIN CRECTER"]

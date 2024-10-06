@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="chroma quest of speicture"
-run/main_scene="res://scens/main menu.tscn"
+run/main_scene="res://scens/level 1 .tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://textures/Chroma-Quest-Spectrum-Adventur.png"
 
