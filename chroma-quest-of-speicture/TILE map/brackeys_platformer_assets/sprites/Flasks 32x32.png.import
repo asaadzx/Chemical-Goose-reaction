@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n1ybaqm0iuk0"
-path="res://.godot/imported/lefco logo.png-9845db4c1d7b75e1af49fb427d11e5c2.ctex"
+uid="uid://cfm5ft11hd2nr"
+path="res://.godot/imported/Flasks 32x32.png-b00c539a3763e3ad72e5be67088ffdaa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/lefco logo.png"
-dest_files=["res://.godot/imported/lefco logo.png-9845db4c1d7b75e1af49fb427d11e5c2.ctex"]
+source_file="res://TILE map/brackeys_platformer_assets/sprites/Flasks 32x32.png"
+dest_files=["res://.godot/imported/Flasks 32x32.png-b00c539a3763e3ad72e5be67088ffdaa.ctex"]
 
 [params]
 

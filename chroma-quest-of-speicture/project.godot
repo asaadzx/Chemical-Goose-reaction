@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="chroma quest of speicture"
+config/name="Goose chemical reaction"
 run/main_scene="res://scens/level 1 .tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://textures/Chroma-Quest-Spectrum-Adventur.png"
+boot_splash/image="res://textures/lefco logo.png"
 
 [input]
 

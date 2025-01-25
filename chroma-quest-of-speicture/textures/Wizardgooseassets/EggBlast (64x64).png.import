@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n1ybaqm0iuk0"
-path="res://.godot/imported/lefco logo.png-9845db4c1d7b75e1af49fb427d11e5c2.ctex"
+uid="uid://d2f30qihox22j"
+path="res://.godot/imported/EggBlast (64x64).png-96dec97b25093aaf6e847389b08ad027.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/lefco logo.png"
-dest_files=["res://.godot/imported/lefco logo.png-9845db4c1d7b75e1af49fb427d11e5c2.ctex"]
+source_file="res://textures/Wizardgooseassets/EggBlast (64x64).png"
+dest_files=["res://.godot/imported/EggBlast (64x64).png-96dec97b25093aaf6e847389b08ad027.ctex"]
 
 [params]
 

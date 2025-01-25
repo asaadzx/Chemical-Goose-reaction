@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n1ybaqm0iuk0"
-path="res://.godot/imported/lefco logo.png-9845db4c1d7b75e1af49fb427d11e5c2.ctex"
+uid="uid://c2xga00lk61q8"
+path="res://.godot/imported/Jump (32x32).png-c4d0105c5732f488c2e7828779dcacf0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/lefco logo.png"
-dest_files=["res://.godot/imported/lefco logo.png-9845db4c1d7b75e1af49fb427d11e5c2.ctex"]
+source_file="res://textures/Wizardgooseassets/Jump (32x32).png"
+dest_files=["res://.godot/imported/Jump (32x32).png-c4d0105c5732f488c2e7828779dcacf0.ctex"]
 
 [params]
 
