@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bgrbujkt8d1wm"]
+[gd_scene load_steps=10 format=3 uid="uid://bgrbujkt8d1wm"]
 
 [ext_resource type="Texture2D" uid="uid://b1n1x4etad6re" path="res://TILE map/brackeys_platformer_assets/sprites/tileset.png" id="1_j6hs1"]
 [ext_resource type="Texture2D" uid="uid://dxmh420aiwnxl" path="res://TILE map/brackeys_platformer_assets/sprites/sky.png" id="1_l73rd"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ca5wavao21bty" path="res://TILE map/brackeys_platformer_assets/sprites/clouds.png" id="2_x1msn"]
 [ext_resource type="PackedScene" uid="uid://3xookdmciway" path="res://cracters/over worlde.tscn" id="3_6lmuv"]
 [ext_resource type="PackedScene" uid="uid://bqf110vadmcma" path="res://cracters/checkpoint.tscn" id="4_2c3fq"]
+[ext_resource type="PackedScene" uid="uid://diigd8sqcb7lu" path="res://cracters/pause MENU.tscn" id="7_27bdb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3tmoe"]
 texture = ExtResource("1_j6hs1")
@@ -85,8 +86,11 @@ texture = ExtResource("1_j6hs1")
 30:3/0 = 0
 30:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0.25, -6.25, 0.75, 5, -8, 8)
 33:3/0 = 0
+33:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(1.375, 5.875, 6.75, 0.375, 8, 8, 3.625, 8)
 34:3/0 = 0
+34:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0, 8, 0.25, 8, 8, -8, 8)
 35:3/0 = 0
+35:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0, -3.875, 0.75, -0.375, 8, -8, 8)
 37:3/0 = 0
 37:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.5, 3.5, 8, 0.125, 8, 8, 1.5, 8)
 38:3/0 = 0
@@ -137,8 +141,11 @@ texture = ExtResource("1_j6hs1")
 29:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 30:4/0 = 0
 33:4/0 = 0
+33:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(1, -7, 8, -8, 8, 8, 3.625, 8)
 34:4/0 = 0
+34:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 35:4/0 = 0
+35:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -0.875, -8, 0.5, -0.875, -2, 6.5, -8, 8)
 37:4/0 = 0
 37:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(1.5, -8, 8, -8, 8, 8, 3.25, 7)
 38:4/0 = 0
@@ -186,6 +193,7 @@ texture = ExtResource("1_j6hs1")
 29:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 30:5/0 = 0
 33:5/0 = 0
+33:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -0.875, -8, 0.5, -0.875, -2, 6.5, -8, 8)
 34:5/0 = 0
 35:5/0 = 0
 37:5/0 = 0
@@ -658,6 +666,14 @@ layer_0/tile_data = PackedInt32Array(327688, 1900544, 2, 393224, 1900544, 3, 327
 position = Vector2(396, 353)
 
 [node name="main crecter" parent="." instance=ExtResource("2_u2krx")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="main crecter"]
+
+[node name="Control" parent="main crecter/CanvasLayer" instance=ExtResource("7_27bdb")]
+offset_left = 859.0
+offset_top = 896.0
+offset_right = 859.0
+offset_bottom = 896.0
 
 [node name="over world" parent="." instance=ExtResource("3_6lmuv")]
 

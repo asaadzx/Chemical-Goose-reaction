@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://ctawnsyu4ltnx"]
+[gd_scene load_steps=38 format=3 uid="uid://ctawnsyu4ltnx"]
 
 [ext_resource type="Script" path="res://spricts/main_crecter.gd" id="1_yvul2"]
 [ext_resource type="Texture2D" uid="uid://btvfxcp2rdcny" path="res://textures/Wizardgooseassets/Fall (32x32).png" id="2_rco6h"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://c2xga00lk61q8" path="res://textures/Wizardgooseassets/Jump (32x32).png" id="3_vjpol"]
 [ext_resource type="Texture2D" uid="uid://pxxwbmrw2hk6" path="res://textures/Wizardgooseassets/Idle (64x64)-sheet.png" id="4_8ugby"]
 [ext_resource type="Texture2D" uid="uid://bmky57gab4le0" path="res://textures/Wizardgooseassets/Run (64x64)-sheet.png" id="4_hu612"]
-[ext_resource type="PackedScene" uid="uid://diigd8sqcb7lu" path="res://cracters/pause MENU.tscn" id="7_txu0m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8myoq"]
 atlas = ExtResource("3_kqmjc")
@@ -255,6 +254,9 @@ height = 42.0
 position = Vector2(532, 256)
 script = ExtResource("1_yvul2")
 
+[node name="Camera2D" type="Camera2D" parent="MAIN CRECTER"]
+position_smoothing_enabled = true
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MAIN CRECTER"]
 light_mask = 9
 visibility_layer = 9
@@ -268,12 +270,3 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MAIN CRECTER"]
 position = Vector2(-3, 6)
 shape = SubResource("CapsuleShape2D_ieb0b")
-
-[node name="Camera2D" type="Camera2D" parent="MAIN CRECTER"]
-position_smoothing_enabled = true
-
-[node name="Control" parent="." instance=ExtResource("7_txu0m")]
-offset_left = -2.0
-offset_top = -9.0
-offset_right = -2.0
-offset_bottom = -9.0

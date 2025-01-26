@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://djxicnbg2knew"]
+[gd_scene load_steps=13 format=3 uid="uid://djxicnbg2knew"]
 
 [ext_resource type="Texture2D" uid="uid://dxmh420aiwnxl" path="res://TILE map/brackeys_platformer_assets/sprites/sky.png" id="1_4empu"]
 [ext_resource type="Texture2D" uid="uid://b1n1x4etad6re" path="res://TILE map/brackeys_platformer_assets/sprites/tileset.png" id="1_s1287"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://spricts/level_2.gd" id="4_ndmoe"]
 [ext_resource type="PackedScene" uid="uid://3xookdmciway" path="res://cracters/over worlde.tscn" id="5_b3cyk"]
 [ext_resource type="PackedScene" uid="uid://bqf110vadmcma" path="res://cracters/checkpoint.tscn" id="6_yb246"]
+[ext_resource type="PackedScene" uid="uid://diigd8sqcb7lu" path="res://cracters/pause MENU.tscn" id="9_j0c6s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bgnou"]
 texture = ExtResource("1_s1287")
@@ -593,6 +594,14 @@ position_smoothing_enabled = true
 [node name="main crecter" parent="." instance=ExtResource("3_oncpd")]
 
 [node name="Checkpoint" parent="." instance=ExtResource("6_yb246")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("9_j0c6s")]
+offset_left = 333.0
+offset_top = 490.0
+offset_right = 333.0
+offset_bottom = 490.0
 
 [connection signal="pressed" from="mouse use/level1" to="mouse use/level1" method="_on_pressed"]
 [connection signal="pressed" from="mouse use/level2" to="mouse use/level2" method="_on_pressed"]
