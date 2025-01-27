@@ -11,5 +11,6 @@ func _ready():
 
 
 func _on_body_entered(_body: Node2D) -> void:
-	print("save it")
-	print("go to level 2")
+	if _body is Player:
+		print("save it")
+		print("go to level 2")

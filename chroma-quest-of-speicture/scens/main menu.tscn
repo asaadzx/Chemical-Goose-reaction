@@ -1,10 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://djxicnbg2knew"]
+[gd_scene load_steps=11 format=3 uid="uid://djxicnbg2knew"]
 
 [ext_resource type="Texture2D" uid="uid://dxmh420aiwnxl" path="res://TILE map/brackeys_platformer_assets/sprites/sky.png" id="1_4empu"]
 [ext_resource type="Texture2D" uid="uid://b1n1x4etad6re" path="res://TILE map/brackeys_platformer_assets/sprites/tileset.png" id="1_s1287"]
 [ext_resource type="FontFile" uid="uid://bpq8pqrwhi6lr" path="res://TILE map/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_ljm1s"]
 [ext_resource type="PackedScene" uid="uid://ctawnsyu4ltnx" path="res://cracters/main_crecter.tscn" id="3_oncpd"]
-[ext_resource type="Script" path="res://spricts/level_2.gd" id="4_ndmoe"]
 [ext_resource type="PackedScene" uid="uid://3xookdmciway" path="res://cracters/over worlde.tscn" id="5_b3cyk"]
 [ext_resource type="PackedScene" uid="uid://cv0602lwl1kpq" path="res://cracters/door_scene 1.tscn" id="8_c1fwt"]
 [ext_resource type="PackedScene" uid="uid://diigd8sqcb7lu" path="res://cracters/pause MENU.tscn" id="9_j0c6s"]
@@ -567,23 +566,5 @@ offset_top = 15.0
 offset_right = 7.0
 offset_bottom = 15.0
 
-[node name="mouse use" type="Node" parent="."]
-
-[node name="level2" type="Button" parent="mouse use"]
-anchors_preset = -1
-anchor_left = 0.949
-anchor_top = 0.346
-anchor_right = 0.949
-anchor_bottom = 0.346
-offset_left = -27.248
-offset_top = -15.208
-offset_right = -19.248
-offset_bottom = -7.20801
-text = "level2
-"
-script = ExtResource("4_ndmoe")
-
 [node name="Door scenes" parent="." instance=ExtResource("8_c1fwt")]
 position = Vector2(1252, 409)
-
-[connection signal="pressed" from="mouse use/level2" to="mouse use/level2" method="_on_pressed"]
