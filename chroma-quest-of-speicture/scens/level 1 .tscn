@@ -1,11 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://bgrbujkt8d1wm"]
+[gd_scene load_steps=12 format=3 uid="uid://bgrbujkt8d1wm"]
 
 [ext_resource type="Texture2D" uid="uid://b1n1x4etad6re" path="res://TILE map/brackeys_platformer_assets/sprites/tileset.png" id="1_j6hs1"]
 [ext_resource type="Texture2D" uid="uid://dxmh420aiwnxl" path="res://TILE map/brackeys_platformer_assets/sprites/sky.png" id="1_l73rd"]
 [ext_resource type="PackedScene" uid="uid://ctawnsyu4ltnx" path="res://cracters/main_crecter.tscn" id="2_u2krx"]
 [ext_resource type="Texture2D" uid="uid://ca5wavao21bty" path="res://TILE map/brackeys_platformer_assets/sprites/clouds.png" id="2_x1msn"]
 [ext_resource type="PackedScene" uid="uid://3xookdmciway" path="res://cracters/over worlde.tscn" id="3_6lmuv"]
+[ext_resource type="LabelSettings" uid="uid://cur3p1cxpdx5j" path="res://effects/Level1 Label setting.tres" id="3_uutg4"]
 [ext_resource type="PackedScene" uid="uid://bqf110vadmcma" path="res://cracters/checkpoint.tscn" id="4_2c3fq"]
+[ext_resource type="Texture2D" uid="uid://c76xgm7bsbijo" path="res://textures/Periodic Table of the Elements.png" id="4_4uevh"]
 [ext_resource type="PackedScene" uid="uid://diigd8sqcb7lu" path="res://cracters/pause MENU.tscn" id="7_27bdb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3tmoe"]
@@ -655,6 +657,55 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_x1msn")
 
+[node name="A and D" type="Label" parent="visuals"]
+offset_left = 283.0
+offset_top = 245.0
+offset_right = 921.0
+offset_bottom = 268.0
+text = "To move use \"A\",\"D\" for forward and backward"
+label_settings = ExtResource("3_uutg4")
+
+[node name="Jump" type="Label" parent="visuals"]
+offset_left = 559.0
+offset_top = 287.0
+offset_right = 1197.0
+offset_bottom = 310.0
+text = "To Jump use \"SPACE\""
+label_settings = ExtResource("3_uutg4")
+
+[node name="long jump" type="Label" parent="visuals"]
+offset_left = 2964.0
+offset_top = 416.0
+offset_right = 3326.0
+offset_bottom = 439.0
+text = "To Long Jump Hold \"SPACE\""
+label_settings = ExtResource("3_uutg4")
+
+[node name="periodic table" type="Button" parent="visuals"]
+texture_filter = 1
+offset_left = 1335.0
+offset_top = 142.0
+offset_right = 2797.0
+offset_bottom = 1341.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("4_4uevh")
+
+[node name="Arow 1" type="Label" parent="visuals"]
+offset_left = 1007.0
+offset_top = 339.0
+offset_right = 1301.0
+offset_bottom = 362.0
+text = "You will need that ==>"
+label_settings = ExtResource("3_uutg4")
+
+[node name="Button" type="Button" parent="visuals"]
+offset_left = 7133.0
+offset_top = 664.0
+offset_right = 7221.0
+offset_bottom = 768.0
+text = "Level 2
+"
+
 [node name="move on" type="TileMap" parent="."]
 texture_filter = 1
 scale = Vector2(5, 5)
@@ -670,11 +721,13 @@ position = Vector2(396, 353)
 [node name="CanvasLayer" type="CanvasLayer" parent="main crecter"]
 
 [node name="Control" parent="main crecter/CanvasLayer" instance=ExtResource("7_27bdb")]
-offset_left = 859.0
-offset_top = 896.0
-offset_right = 859.0
-offset_bottom = 896.0
+offset_left = -13.0
+offset_top = -72.0
+offset_right = -13.0
+offset_bottom = -72.0
 
 [node name="over world" parent="." instance=ExtResource("3_6lmuv")]
+position = Vector2(2326, 1336)
 
 [node name="Checkpoint" parent="." instance=ExtResource("4_2c3fq")]
+position = Vector2(7141, 805)

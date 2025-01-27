@@ -2,13 +2,13 @@
 
 [ext_resource type="Script" path="res://spricts/checkpoint_area_2d.gd" id="1_mk1dl"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7buw"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eu75u"]
 
-[node name="Checkpoint" type="Node"]
-
-[node name="CheckpointArea2D" type="Area2D" parent="."]
+[node name="CheckpointArea2D" type="Area2D"]
 position = Vector2(576, 246)
 script = ExtResource("1_mk1dl")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CheckpointArea2D"]
-shape = SubResource("RectangleShape2D_a7buw")
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eu75u")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

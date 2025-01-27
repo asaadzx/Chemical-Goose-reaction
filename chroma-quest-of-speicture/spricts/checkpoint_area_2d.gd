@@ -6,8 +6,10 @@ var active_sound = null
 
 
 func _ready():
-	add_to_group("checkpoint")
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
 	pass
+
+
+
+func _on_body_entered(_body: Node2D) -> void:
+	print("save it")
+	print("go to level 2")

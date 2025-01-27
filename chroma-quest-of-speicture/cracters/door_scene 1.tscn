@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv0602lwl1kpq"]
+
+[ext_resource type="Script" path="res://spricts/door_scene 1.gd" id="1_xjckr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kkwfg"]
+
+[node name="Door scenes" type="Area2D"]
+script = ExtResource("1_xjckr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_kkwfg")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
