@@ -20,6 +20,26 @@ offset_right = -502.5
 offset_bottom = -304.5
 uri = "https://en.wikipedia.org/wiki/Hydrogen#:~:text=Hydrogen%20is%20a%20chemical%20element,molecular%20hydrogen%2C%20or%20simply%20hydrogen."
 
-[node name="le" type="LinkButton" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="lithium" type="LinkButton" parent="."]
+anchors_preset = -1
+anchor_left = 0.138
+anchor_top = 0.289
+anchor_right = 0.138
+anchor_bottom = 0.289
+offset_left = -740.152
+offset_top = -616.699
+offset_right = -700.152
+offset_bottom = -576.699
+uri = "https://en.wikipedia.org/wiki/Lithium"
+
+[node name="sodium" type="LinkButton" parent="."]
+anchors_preset = -1
+anchor_left = 0.138
+anchor_top = 0.289
+anchor_right = 0.138
+anchor_bottom = 0.289
+offset_left = -728.152
+offset_top = -535.699
+offset_right = -688.152
+offset_bottom = -495.699
+uri = "https://en.wikipedia.org/wiki/Sodium"

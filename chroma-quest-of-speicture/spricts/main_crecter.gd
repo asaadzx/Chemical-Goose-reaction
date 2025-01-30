@@ -9,7 +9,7 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -430.0
 const GRAVITY = 1000.0
 const FLOAT_GRAVITY_SCALE = 0.4
-const INACTIVITY_TIMEOUT = 10.0
+const INACTIVITY_TIMEOUT = 10000.0
 
 var is_holding_jump: bool = false
 var is_grounded: bool = false

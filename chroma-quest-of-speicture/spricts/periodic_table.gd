@@ -11,6 +11,10 @@ var zoom_duration = 0.3 # Duration of the animation.
 func _ready() -> void:
 	pass # Replace with function body.
 
+func _physics_process(_delta: float) -> void:
+	if Input.is_action_just_pressed("Exit_wiki"):
+		get_tree().change_scene_to_file("res://scens/level 1 .tscn")
+
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
 		_on_zoom_event(event)
