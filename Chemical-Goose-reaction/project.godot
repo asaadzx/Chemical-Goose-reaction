@@ -16,7 +16,7 @@ run/main_scene="res://scens/main menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/image="res://textures/lefco logo.png"
 boot_splash/use_filter=false
-config/icon="/home/asaad/Downloads/the-Goose-icon.png"
+config/icon="res://textures/the-Goose-icon.png"
 
 [display]
 

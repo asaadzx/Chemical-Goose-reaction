@@ -567,4 +567,4 @@ offset_right = 7.0
 offset_bottom = 15.0
 
 [node name="Door scenes" parent="." instance=ExtResource("8_c1fwt")]
-position = Vector2(1252, 409)
+position = Vector2(1257, 396)
