@@ -23,9 +23,12 @@ Embark on an adventurous journey where chemistry meets mystery! Solve puzzles, u
 
 *   Godot Engine
 
-## 🚀 How to Play
+## THE GAME COMMING SOON
+```
+    ## 🚀 How to Play
 
-1.  Download the game from [Link to Release/Download].
-2.  Extract the files.
-3.  Run the executable.
-4.  Start your chemical adventure!
+    1.  Download the game from [Link to Release/Download].
+    2.  Extract the files.
+    3.  Run the executable.
+    4.  Start your chemical adventure!
+```
