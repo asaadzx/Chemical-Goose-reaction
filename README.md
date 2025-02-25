@@ -1,5 +1,6 @@
 
-# ![GAME LOGO](/home/asaad/Documents/github clone work/godot/Chemical-Goose-reaction/Chemical-Goose-reaction/textures/the-Goose-icon.png)
+# ![GAME LOGO](textures/the-Goose-icon.png)
+
 # 🧪 Chemical Goose Reaction 🦢
 
 Embark on an adventurous journey where chemistry meets mystery! Solve puzzles, uncover clues, and trigger **chemical reactions** based on the periodic table in this educational and engaging Godot game. 
