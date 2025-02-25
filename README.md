@@ -1,5 +1,5 @@
 
-# ![GAME LOGO](textures/the-Goose-icon.png)
+# ![GAME LOGO](the-Goose-icon.png)
 
 # 🧪 Chemical Goose Reaction 🦢
 
