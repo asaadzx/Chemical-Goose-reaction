@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b7ua5bnifo6b"]
 
 [ext_resource type="Texture2D" uid="uid://c76xgm7bsbijo" path="res://textures/Periodic Table of the Elements.png" id="1_m8unq"]
-[ext_resource type="Script" path="res://spricts/periodic_table.gd" id="2_yx7j1"]
+[ext_resource type="Script" uid="uid://cg5vtyv7dbwjg" path="res://spricts/periodic_table.gd" id="2_yx7j1"]
 
 [node name="periodic table" type="Sprite2D"]
 position = Vector2(304, 67)

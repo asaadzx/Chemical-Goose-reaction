@@ -13,9 +13,9 @@ config_version=5
 config/name="Goose chemical reaction"
 config/version="1.0"
 run/main_scene="res://scens/main menu.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
-boot_splash/image="res://textures/lefco logo.png"
+config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/use_filter=false
+boot_splash/image="res://textures/lefco logo.png"
 config/icon="res://textures/the-Goose-icon.png"
 
 [display]
@@ -71,9 +71,9 @@ locale/locale_filter_mode=1
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-environment/defaults/default_clear_color=Color(1, 1, 1, 1)
+viewport/hdr_2d=true
 anti_aliasing/quality/msaa_2d=3
 anti_aliasing/quality/msaa_3d=3
-viewport/hdr_2d=true
+environment/defaults/default_clear_color=Color(1, 1, 1, 1)
 anti_aliasing/quality/screen_space_aa=1
 anti_aliasing/quality/use_taa=true

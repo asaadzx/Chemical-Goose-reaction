@@ -8,7 +8,7 @@
 [ext_resource type="LabelSettings" uid="uid://cur3p1cxpdx5j" path="res://effects/Level1 Label setting.tres" id="3_uutg4"]
 [ext_resource type="PackedScene" uid="uid://bqf110vadmcma" path="res://cracters/checkpoint 1.tscn" id="4_2c3fq"]
 [ext_resource type="Texture2D" uid="uid://c76xgm7bsbijo" path="res://textures/Periodic Table of the Elements.png" id="4_4uevh"]
-[ext_resource type="Script" path="res://spricts/periodic_table_botton.gd" id="5_acmy8"]
+[ext_resource type="Script" uid="uid://dfx1pwh0eap2j" path="res://spricts/periodic_table_botton.gd" id="5_acmy8"]
 [ext_resource type="PackedScene" uid="uid://diigd8sqcb7lu" path="res://cracters/pause MENU.tscn" id="7_27bdb"]
 [ext_resource type="PackedScene" uid="uid://cxn2lqighh2fl" path="res://cracters/door_scene_2.tscn" id="10_l4o1k"]
 

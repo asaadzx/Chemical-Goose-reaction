@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cxn2lqighh2fl"]
 
-[ext_resource type="Script" path="res://spricts/door_scene_2.gd" id="1_p2qsg"]
+[ext_resource type="Script" uid="uid://c11p4fvjuyfpu" path="res://spricts/door_scene_2.gd" id="1_p2qsg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kmbau"]
 
