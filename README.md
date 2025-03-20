@@ -88,6 +88,7 @@ Meet Honkman, a remarkably curious goose with a penchant for shiny objects, who 
 4. Start your chemical adventure!
 
 ## 🎮 Game Status
-
+----
 THE GAME IS COMING SOON
-And Now Try to Assets To <use>
+-----
+And Now Try to Get good Assets To Use
